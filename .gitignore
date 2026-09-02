@@ -1,0 +1,23 @@
+# Kredensial database asli -- copy config/database.example.php jadi config/database.php lalu isi sendiri.
+/config/database.php
+
+# Catatan internal project (termasuk keputusan sensitif) -- tidak untuk publik di GitHub.
+/CLAUDE.md
+
+# File debug sementara (aktifkan display_errors) -- jangan pernah ikut ter-upload/commit,
+# bisa membocorkan path server & detail error ke publik kalau lupa dihapus dari live site.
+/debug.php
+
+# File upload runtime (foto laporan Menu 2, tanda tangan) -- data user, bukan kode.
+# .htaccess yang sudah ada tetap ikut ter-track (proteksi eksekusi PHP di folder upload).
+/includes/menu/menu2/uploads/*
+!/includes/menu/menu2/uploads/.htaccess
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Claude Code -- izin/preferensi lokal per komputer, jangan ikut di-commit.
+.claude/settings.local.json
